@@ -1,3 +1,63 @@
-body {
-    background-color: #FF1801;
+menu{
+  list-style: none;
+  background-color: #FF1801;
+  padding: 9px 30px;
+  text-align: center;
+  overflow: hidden;
+  margin: -8px;
+}
+
+menu a {
+  margin: 0px;
+  color: white;
+  text-decoration: none;
+  font-family: F1;
+  padding: 20px 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+menu a:hover{
+  background-color: rgb(29, 29, 29);
+;
+  color: white;
+}
+.topnav-right {
+  float: left;
+}
+
+body{
+  background-color: rgb(29, 29, 29);
+}
+
+#right{
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+  
+}
+
+#text-home{
+  float: left;
+  margin-left: 100px;
+  margin-top: 120px;
+  color: white;
+  font-size: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+/*Responsive per telefona mobil */
+@media screen and (max-width: 600px) {
+  menu a {
+    float: none;
+    display: block;
   }
+
+
+
