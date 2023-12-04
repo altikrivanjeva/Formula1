@@ -7,6 +7,7 @@
     
     </head>
 <body>
+  
     <menu>
         <li>
           <div class="topnav-right">
@@ -24,22 +25,65 @@
 
         <div id="contact">
 
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder=" Name">
+            <div class="error-message" id="nameError"></div>
+
   <br>
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Email">
+            <input type="text" id="email" placeholder="Email">
+            <div class="error-message" id="emailError"></div>
             <br>
             <label for="message">Message</label>
-            <input type="text" id="message" name="message" placeholder="Write your message...">
+            <textarea id="message" name="message" placeholder="Write your message..."></textarea>
+            <div class="error-message" id="messageError"></div>
 <br>    
+<button type="button" onclick="validateForm()" id="submit">Submit</button>
 
-<input type="submit" name="submit" id="submit">
-
-
+  
         </div>
 
 
+
+
+
+
+
+        <script>
+    let nameRegex = /^[A-Z][a-z]{3,8}$/;
+    let emailRegex = /[a-zA-Z.-_]+@[a-z]+\.[a-z]{2,3}$/;
+    let messageRegex = /^[a-zA-Z][\s\S]{4,}$/;
+
+    function validateForm() {
+        let nameInput = document.getElementById('name');
+        let nameError = document.getElementById('nameError');
+        let emailInput = document.getElementById('email');
+        let emailError = document.getElementById('emailError');
+        let messageInput = document.getElementById('message');
+        let messageError = document.getElementById('messageError');
+
+        nameError.innerText = '';
+        emailError.innerText = '';
+        messageError.innerText = '';
+
+        if (!nameRegex.test(nameInput.value)) {
+            nameError.innerText = 'Invalid name';
+            return;
+        }
+        if (!emailRegex.test(emailInput.value)) {
+            emailError.innerText = 'Invalid email';
+            return;
+        }
+        if (!messageRegex.test(messageInput.value)) {
+            messageError.innerText = 'You need to write more than 5 characters';
+            return;
+        }
+        location.reload();
+        alert('Your message submitted successfully!');
+    }
+
+   
+</script>
 
 </body>
 </html>
