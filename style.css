@@ -13,7 +13,7 @@ menu a {
   text-decoration: none;
   font-family: F1;
   padding: 20px 30px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva,Tahoma, sansserif;
   font-size: 10px;
 }
 
@@ -47,17 +47,54 @@ body{
 }
 
 
+.logo{
+  width: 60px;
+  height: auto;
+}
 
 
 
 
 
-/*Responsive per telefona mobil */
-@media screen and (max-width: 600px) {
-  menu a {
-    float: none;
-    display: block;
-  }
+.carousel-container {
+  padding-top: 1%;
+  position: relative;
+  margin: -10px;
+  overflow: hidden;
+}
 
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: auto;
+}
 
+.carousel-item {
+  flex: 0 0 100%;
+}
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: white;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
