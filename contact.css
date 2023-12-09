@@ -64,3 +64,30 @@ input {
     width: 98.5%;
   
   }
+
+
+
+  /* stilizi i foterit */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF1801;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  height: 180px;
+  margin: -10px;
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.left-footer{
+  line-height: 25px;
+  width: 49px;
+}
+
+.right-footer{
+  text-align: right;
+}
+
