@@ -1,0 +1,346 @@
+menu{
+    list-style: none;
+    background-color: #FF1801;
+    padding: 9px 30px;
+    text-align: center;
+    overflow: hidden;
+    margin: -8px;
+  }
+  
+  menu a {
+    margin: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: F1;
+    padding: 20px 30px;
+    font-family: Verdana, Geneva,Tahoma, sansserif;
+    font-size: 10px;
+  }
+  
+  menu a:hover{
+    background-color: rgb(29, 29, 29);
+  ;
+    color: white;
+  }
+  .topnav-right {
+    float: left;
+  }
+  
+  body{
+    background-color: rgb(29, 29, 29);
+  }
+  
+  #right{
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    
+  }
+  
+  #text-home{
+    float: left;
+    margin-left: 100px;
+    margin-top: 120px;
+    color: white;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  .logo{
+    width: 60px;
+    height: auto;
+  }
+
+  
+
+  .team-container {
+    margin-left: 10%;
+    border-image: 2px;
+    margin-top: 5%;
+
+}
+
+.team {
+    position: relative;
+    margin: 10px;
+}
+
+.alfa-logo {
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup-image {
+    width: 250px;
+    height: 190px;
+    margin: 5px;
+}
+
+
+.alpha {
+    
+    border-image: 2px;
+
+}
+
+.team1 {
+    position: relative;
+    margin: 10px;
+}
+.alpha-logo{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.popup1 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup1-image {
+    width: 220px;
+    height: 190px;
+    margin: 5px;
+}
+
+
+.alpine {
+    
+    border-image: 2px;
+
+}
+
+.team2 {
+    position: relative;
+    margin: 10px;
+}
+.alpine-logo{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.popup2 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup2-image {
+    width: 220px;
+    height: 190px;
+    margin: 5px;
+}
+
+.aston {
+    
+    border-image: 2px;
+
+}
+
+.team3 {
+    position: relative;
+    margin: 10px;
+}
+.aston-logo{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.popup3 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup3-image {
+    width: 220px;
+    height: 190px;
+    margin: 5px;
+}
+
+.ferrari {
+    
+    border-image: 2px;
+
+}
+
+.team4 {
+    position: relative;
+    margin: 10px;
+}
+.ferrari-logo{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.popup4{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup4-image {
+    width: 220px;
+    height: 190px;
+    margin: 5px;
+}
+.haas {
+    
+    border-image: 2px;
+
+}
+
+.team5{
+    position: relative;
+    margin: 10px;
+}
+.haas-logo{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.popup5{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup5-image {
+    width: 220px;
+    height: 190px;
+    margin: 5px;
+}
+
+.mclaren{
+    border-image: 2px;
+
+}
+
+.team6{
+    position: relative;
+    margin: 10px;
+}
+.mclaren-logo{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.popup6{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup6-image {
+    width: 220px;
+    height: 190px;
+    margin: 5px;
+}
+
+.mercedes{
+    border-image: 2px;
+
+}
+
+.team7{
+    position: relative;
+    margin: 10px;
+}
+.mercedes-logo{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.popup7{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup7-image {
+    width: 220px;
+    height: 190px;
+    margin: 5px;
+}
+
+
+.redbull{
+    border-image: 2px;
+
+}
+
+.team8{
+    position: relative;
+    margin: 10px;
+}
+.redbulllogo{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.popup8{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup8-image {
+    width: 220px;
+    height: 190px;
+    margin: 5px;
+}
+
+.williams{
+    border-image: 2px;
+
+}
+
+.team9{
+    position: relative;
+    margin: 10px;
+}
+.williams-logo{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.popup9{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: none;
+}
+
+.popup9-image {
+    width: 220px;
+    height: 190px;
+    margin: 5px;
+}

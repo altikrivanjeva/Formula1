@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="teams.css"/> 
+
+
+
+</head>
+<body>
+    <menu>
+        <li>
+          <div class="topnav-right">
+             <img class="logo" src="./Assets/logot/F1white.png" alt="f1 logo">
+        </div>
+          <a href="#home">HOME</a>
+          <a href="#home">TEAMS</a>
+          <a href="#home">TRACKS</a>
+          <a href="#home">TICKETS</a>
+          <a href="#home">CONTACT</a>
+        
+        </li>
+        </menu>   
+
+
+        <div class="team-container">
+            <div class="team" >
+                <img src="./Assets/logot/Alfa800x800.png" alt="Alfa logo" class="alfa-logo">
+                <div class="popup">
+                    <img src="./Assets/drivers/alfaromeo.png" alt="Alfa Player" class="popup-image">
+                    <img src="./Assets/drivers/alfaromeo1.png" alt="Alfa Player" class="popup-image">
+                </div>
+            </div>
+
+
+
+            <div class="alpha">
+            <div class="team1">
+                <img src="./Assets/logot/Alpha800x800.png" alt="Alpha logo" class="alpha-logo">
+                <div class="popup1">
+                    <img src="./Assets/drivers/alfa.png" alt="Alpha Player" class="popup1-image">
+                    <img src="./Assets/drivers/alfa1.png" alt="Alpha Player" class="popup1-image">
+                </div>
+            </div>
+
+
+            <div class="alpine">
+                <div class="team2">
+                    <img src="./Assets/logot/Alpine800x800.png" alt="Alpine logo" class="alpine-logo">
+                    <div class="popup2">
+                        <img src="./Assets/drivers/alpine.png" alt="Alpine Player" class="popup2-image">
+                        <img src="./Assets/drivers/alpine1.png" alt="Alpine Player" class="popup2-image">
+                    </div>
+                </div>
+
+                <div class="aston">
+                    <div class="team3">
+                        <img src="./Assets/logot/Aston800x800.png" alt="Aston logo" class="aston-logo">
+                        <div class="popup3">
+                            <img src="./Assets/drivers/astonmartin.png" alt="astonmartin Player" class="popup3-image">
+                            <img src="./Assets/drivers/astonmartin1.png" alt="astonmartin Player" class="popup3-image">
+                        </div>
+                    </div>
+
+                    <div class="ferrari">
+                        <div class="team4">
+                            <img src="./Assets/logot/Ferrari800x800.png" alt="Ferrari logo" class="ferrari-logo">
+                            <div class="popup4">
+                                <img src="./Assets/drivers/ferrari.png" alt="ferrari Player" class="popup4-image">
+                                <img src="./Assets/drivers/ferrari1.png" alt="ferrari Player" class="popup4-image">
+                            </div>
+                        </div>
+
+
+                        <div class="haas">
+                            <div class="team5">
+                                <img src="./Assets/logot/Haas800x800.png" alt="Haas logo" class="haas-logo">
+                                <div class="popup5">
+                                    <img src="./Assets/drivers/moneygram.png" alt="ferrari Player" class="popup5-image">
+                                    <img src="./Assets/drivers/moneygram1.png" alt="ferrari Player" class="popup5-image">
+                                </div>
+                            </div>
+        
+                            <div class="mclaren">
+                                <div class="team6">
+                                    <img src="./Assets/logot/McLaren800x800.png" alt="McLaren logo" class="mclaren-logo">
+                                    <div class="popup6">
+                                        <img src="./Assets/drivers/mclaren.png" alt="mclaren Player" class="popup6-image">
+                                        <img src="./Assets/drivers/mclaren1.png" alt="mclaren Player" class="popup6-image">
+                                    </div>
+                                </div>
+
+                                <div class="mercedes">
+                                    <div class="team7">
+                                        <img src="./Assets/logot/Mercedes800x800.png" alt="Mercedes logo" class="mercedes-logo">
+                                        <div class="popup7">
+                                            <img src="./Assets/drivers/mercedes.png" alt="mercedes Player" class="popup7-image">
+                                            <img src="./Assets/drivers/mercedes1.png" alt="mercedes Player" class="popup7-image">
+                                        </div>
+                                    </div>
+
+                                    <div class="redbull">
+                                    <div class="team8">
+                                        <img src="./Assets/logot/Redbull800x800.png" alt="redbull logo" class="redbull">
+                                        <div class="popup8">
+                                            <img src="./Assets/drivers/redbull.png" alt="redbull Player" class="popup8-image">
+                                            <img src="./Assets/drivers/redbull1.png" alt="redbull Player" class="popup8-image">
+                                        </div>
+                                    </div>
+
+                                    <div class="williams">
+                                        <div class="team9">
+                                            <img src="./Assets/logot/Williams800x800.png" alt="williams logo" class="williams">
+                                            <div class="popup9">
+                                                <img src="./Assets/drivers/williams.png" alt="williams Player" class="popup9-image">
+                                                <img src="./Assets/drivers/williams1.png" alt="williams Player" class="popup9-image">
+                                            </div>
+                                        </div>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team");
+
+    teams.forEach(team => {
+        const popup = team.querySelector(".popup");
+
+        team.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team1");
+
+    teams.forEach(team1 => {
+        const popup = team1.querySelector(".popup1");
+
+        team1.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team1.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team2");
+
+    teams.forEach(team2 => {
+        const popup = team2.querySelector(".popup2");
+
+        team2.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team2.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team3");
+
+    teams.forEach(team3 => {
+        const popup = team3.querySelector(".popup3");
+
+        team3.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team3.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team4");
+
+    teams.forEach(team4 => {
+        const popup = team4.querySelector(".popup4");
+
+        team4.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team4.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team5");
+
+    teams.forEach(team5 => {
+        const popup = team5.querySelector(".popup5");
+
+        team5.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team5.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team6");
+
+    teams.forEach(team6 => {
+        const popup = team6.querySelector(".popup6");
+
+        team6.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team6.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team7");
+
+    teams.forEach(team7 => {
+        const popup = team7.querySelector(".popup7");
+
+        team7.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team7.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team8");
+
+    teams.forEach(team8 => {
+        const popup = team8.querySelector(".popup8");
+
+        team8.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team8.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const teams = document.querySelectorAll(".team9");
+
+    teams.forEach(team9 => {
+        const popup = team9.querySelector(".popup9");
+
+        team9.addEventListener("mouseover", function () {
+            popup.style.display = "flex";
+        });
+
+        team9.addEventListener("mouseout", function () {
+            popup.style.display = "none";
+        });
+    });
+});
+</script>
+    
+</body>
+</html>
