@@ -4,7 +4,7 @@ menu{
   padding: 9px 30px;
   text-align: center;
   overflow: hidden;
-  margin: -8px;
+  margin: -10px;
 }
 
 menu a {
@@ -54,7 +54,7 @@ body{
 
 
 
-
+/* banner style */
 
 .carousel-container {
   padding-top: 1%;
@@ -98,3 +98,32 @@ img {
 .next {
   right: 10px;
 }
+
+
+
+/* stilizi i foterit */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF1801;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  height: 160px;
+  margin: -10px;
+  padding: 30px;
+  padding-left: 50px;
+}
+
+.left-footer{
+  line-height: 25px;
+  width: 49px;
+}
+
+.right-footer{
+  text-align: right;
+}
+
+
+
