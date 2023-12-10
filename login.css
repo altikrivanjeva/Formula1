@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Formula1';
+  src: url('./Assets/Formula1-Regular-1.ttf') format('truetype');
+  
+}
+
+
 menu{
     list-style: none;
     background-color: #FF1801;
@@ -35,27 +42,127 @@ body{
 
   /* stilizi i foterit */
 
-footer{
-  display: flex;
-  justify-content: space-between;
-  background-color: #FF1801;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 15px;
-  height: 180px;
-  margin: -10px;
-  padding: 30px;
-  padding-left: 50px;
-}
-
-.left-footer{
-  line-height: 25px;
-  width: 49px;
-}
-
-.right-footer{
-  text-align: right;
-}
+  footer{
+    background-color: #FF1801;
+    width: 100%;
+    height: 600px;
+    padding-top: 20px;
+    margin-top: 5%;
+    
+    
+    
+  }
+  footer h1{
+    color: #ffffff;
+    font-family: Formula1;
+    margin-left: 42%;
+     margin-top: 1%;
+     font-size: 28px;
+   text-decoration: underline;
+   display: inline-block;
+  
+  }
+  .aboutus{
+    display: flex;
+  
+  }
+  .aboutus img{
+    margin-top: -4%;
+  
+  }
+  .rolexlogo{
+    width:160px;
+    height:70px;
+    margin-left: 1%;
+    padding-top:2%;
+  }
+  .dhllogo{
+    width:140px;
+    height:70px;
+    margin-left:15%;
+    padding-bottom:3%;
+    padding-top: 2%;
+    
+    
+  }
+  .heinekenlogo{
+    width:260px;
+    height:100px;
+    margin-left:10.5%;
+    
+  }
+  .pirellilogo{
+  width:180px;
+  height:90px;
+  margin-left:9%;
+  padding-top: 1%;
+  }
+  footer h2{
+    color: #ffffff;
+    font-family: Formula1;
+    margin-left: 42%;
+     margin-top: 1%;
+     font-size: 28px;
+   text-decoration: underline;
+   display: inline-block;
+  
+  }
+  .socialmedia{
+    display: flex;
+  }
+  .socialmedia img{
+  margin-right: 260px;
+  margin-top:1%;
+  margin-left: 15%;
+  width: 80px;
+    
+  }
+  .tekst{
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 2%;
+    
+  }
+  footer h3{
+    color: #ffffff;
+    font-family: Formula1;
+    margin-top: 2%;
+    font-size: 28px;
+    text-decoration: underline;
+  }
+  .tekst p{
+    color: #ffffff;
+    font-family: Formula1;
+    
+  }
+  .navi{
+    margin-left: 20%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .navi p{
+    color: #ffffff;
+    font-family: Formula1;
+    font-size:33px;
+    text-decoration: underline;
+  
+  }
+  .owners{
+    display: inline-block;
+    margin-left: 25%;
+  }
+  .owners h4{
+    color: #ffffff;
+    font-family: Formula1;
+  text-decoration: underline;
+  font-size: 33px;
+  
+  }
+  .owners p{
+    color: #ffffff;
+    font-family: Formula1;
+    font-size: 20px;
+  }
 
 
 
