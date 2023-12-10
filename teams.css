@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Formula1';
+    src: url('./Assets/Formula1-Regular-1.ttf') format('truetype');
+    
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+
+
+
+
+
 menu{
     list-style: none;
     background-color: #FF1801;
@@ -5,7 +18,7 @@ menu{
     text-align: center;
     overflow: hidden;
     margin: -8px;
-  }
+}
   
   menu a {
     margin: 0px;
@@ -28,6 +41,9 @@ menu{
   
   body{
     background-color: rgb(29, 29, 29);
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
   
   #right{
@@ -90,6 +106,7 @@ menu{
 .alpha {
     
     border-image: 2px;
+    margin-left: 10%;
 
 }
 
@@ -120,6 +137,7 @@ menu{
 .alpine {
     
     border-image: 2px;
+    margin-left: 10%;
 
 }
 
@@ -149,6 +167,7 @@ menu{
 .aston {
     
     border-image: 2px;
+    margin-left: 10%;
 
 }
 
@@ -178,6 +197,7 @@ menu{
 .ferrari {
     
     border-image: 2px;
+    margin-left: 10%;
 
 }
 
@@ -206,6 +226,7 @@ menu{
 .haas {
     
     border-image: 2px;
+    margin-left: 10%;
 
 }
 
@@ -234,6 +255,7 @@ menu{
 
 .mclaren{
     border-image: 2px;
+    margin-left: 10%;
 
 }
 
@@ -262,6 +284,7 @@ menu{
 
 .mercedes{
     border-image: 2px;
+    margin-left: 10%;
 
 }
 
@@ -291,6 +314,7 @@ menu{
 
 .redbull{
     border-image: 2px;
+    margin-left: 10%;
 
 }
 
@@ -319,6 +343,7 @@ menu{
 
 .williams{
     border-image: 2px;
+    margin-left: 10%;
 
 }
 
@@ -326,7 +351,7 @@ menu{
     position: relative;
     margin: 10px;
 }
-.williams-logo{
+.williamslogo{
     width: 200px;
     height: 250px;
     cursor: pointer;
@@ -343,4 +368,125 @@ menu{
     width: 220px;
     height: 190px;
     margin: 5px;
+}
+
+footer{
+    background-color: #FF1801;
+    width: 100%;
+    height: 600px;
+    padding-top: 20px;
+    
+    
+}
+footer h1{
+    color: #ffffff;
+    font-family: Formula1;
+    margin-left: 42%;
+     margin-top: 1%;
+     font-size: 28px;
+   text-decoration: underline;
+   display: inline-block;
+
+}
+.aboutus{
+    display: flex;
+
+}
+.aboutus img{
+    margin-top: -4%;
+
+}
+.rolexlogo{
+    width:160px;
+    height:70px;
+    margin-left: 1%;
+    padding-top:2%;
+}
+.dhllogo{
+    width:140px;
+    height:70px;
+    margin-left:15%;
+    padding-bottom:3%;
+    padding-top: 2%;
+    
+    
+}
+.heinekenlogo{
+    width:260px;
+    height:100px;
+    margin-left:10.5%;
+    
+}
+.pirellilogo{
+width:180px;
+height:90px;
+margin-left:9%;
+padding-top: 1%;
+}
+footer h2{
+    color: #ffffff;
+    font-family: Formula1;
+    margin-left: 42%;
+     margin-top: 1%;
+     font-size: 28px;
+   text-decoration: underline;
+   display: inline-block;
+
+}
+.socialmedia{
+    display: flex;
+}
+.socialmedia img{
+margin-right: 260px;
+margin-top:1%;
+margin-left: 15%;
+width: 80px;
+    
+}
+.tekst{
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 2%;
+    
+}
+footer h3{
+    color: #ffffff;
+    font-family: Formula1;
+    margin-top: 2%;
+    font-size: 28px;
+    text-decoration: underline;
+}
+.tekst p{
+    color: #ffffff;
+    font-family: Formula1;
+    
+}
+.navi{
+    margin-left: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+.navi p{
+    color: #ffffff;
+    font-family: Formula1;
+    font-size:33px;
+    text-decoration: underline;
+
+}
+.owners{
+    display: inline-block;
+    margin-left: 25%;
+}
+.owners h4{
+    color: #ffffff;
+    font-family: Formula1;
+text-decoration: underline;
+font-size: 33px;
+margin-top: ;
+
+}
+.owners p{
+    color: #ffffff;
+    font-family: Formula1;
+    font-size: 20px;
 }
