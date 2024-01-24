@@ -1,63 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css" /> 
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+   
 </head>
+
+
+
 <body>
+    
 
-  <!-- menuja top -->
-<menu>
-<li>
-  <div class="topnav-left">
-     <img class="logo" src="./Assets/logot/F1white.png" alt="f1 logo">
-</div>
-  <a href="index.html">HOME</a>
-  <a href="teams.html">TEAMS</a>
-  <a href="#home">TRACKS</a>
-  <a href="#home">TICKETS</a>
-  <a href="contact.html">CONTACT</a>
-  <button  onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: right;">Login</button>
 
-</li>
-</menu>
+			<!-- Header -->
+				<div id="header">
+					
+					<video autoplay muted loop>
+						<source src="assets/bg-video.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
 
-  
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								
+								<h1><a href="index.html" id="logo">Formula 1</a></h1>
+								<hr />
+								<p>Fastest sport in the World!</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+							</header>
+                            
+							
+
+						</div>
+					
+						
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="teams.html">Teams</a>
+									
+								</li>
+								<li><a href="left-sidebar.html">Tracks</a></li>
+								<li><a href="right-sidebar.html">Tickets</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+
+                <section id="banner">
+					<header>
+						<h2><strong></strong>F1 is about the best drivers competing against each <br> for the best teams producing the best cars they can.
+
+                        </h2>
+						<br>
+						<br>
+						<br>
+						
+            
+                        <h1 style="font-size: 100px; font-weight: 100;">Drivers:</h1>
+					</header>
+				</section>
+
+
 <!-- banneri home screen -->
 <div class="carousel-container">
-  <div class="carousel" id="imageCarousel">
-      <div class="carousel-item">
-          <img src="banner1.jpg" alt="Image 1">
+    <div class="carousel" id="imageCarousel">
+        <div class="carousel-item">
+            <img src="assets/banner1.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/banner2.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="assets/banner3.jpg" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/banner4.jpg" alt="Image 3">
       </div>
-      <div class="carousel-item">
-          <img src="banner2.jpg" alt="Image 2">
-      </div>
-      <div class="carousel-item">
-          <img src="banner3.jpg" alt="Image 3">
-      </div>
-      <div class="carousel-item">
-        <img src="banner4.jpg" alt="Image 3">
     </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
   </div>
-  <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-  <button class="next" onclick="changeSlide(1)">&#10095;</button>
-</div>
-<script src="script.js"></script>
+  <script src="script.js"></script>
+  
 
 
 
+          
+				<div class="wrapper style2">
+
+					<article id="main" class="container special">
+						<header>
+							<br>
+							<br>
+							<p>
+                                Formula One, commonly known as Formula 1 or F1, is the highest class of international racing for open-wheel single-seater formula racing cars sanctioned by the Fédération Internationale de l'Automobile (FIA). The FIA Formula One World Championship has been one of the premier forms of racing around the world since its inaugural running in 1950.
 
 
-<br>
-<br>
-<br>
+                            </p>
+						</header>
+						
+						<footer>
+							<h1 style="color: black; font-size: 60px;">Gulf Air Bahrain GP next race in :</h1>
+							<br>
+							<p id="timer" style="font-size: 60px; text-align: center;"></p>
+						</footer>
+					</article>
 
-
+				</div>
 
 <!-- tabela stading -->
 
-<h1 style="  font-family: Verdana, Geneva, Tahoma, sans-serif; color: white; text-align: center; margin: 40px;
+<h1 style="color: white; text-align: center; margin: 40px; font-size: 50px;
 ">F1 Standings 2023</h1>
 
 <table class="darkTable">
@@ -120,98 +185,8 @@
   </tr>
   </table>
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-
-
-<div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-     
-    </div>
-
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-
-<script>
- 
-  var modal = document.getElementById('id01');
-              window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
-  </script>
-
-
-
-<footer>    
-  <h1>F1 Partners!</h1>
-  <div class="aboutus">
-      <img src="./Assets/logot/RolexTrans.jp2" alt="rolex logo" class="rolexlogo"><br>
-      <img src="./Assets/logot/DHLLogo.jp2" alt="dhl logo" class="dhllogo"><br>
-      <img src="./Assets/logot/heineken.jp2" alt="heineken logo" class="heinekenlogo"><br>
-      <img src="./Assets/logot/pirelli.jp2" alt="pirelli logo" class="pirellilogo">
-  </div>
-  <hr>
-  <h2>Social Media</h2>
-  <div class="socialmedia">
-  <a href="https://www.facebook.com/Formula1" target="_blank"><img src="./Assets/foto/facebook.png" alt="facebook" class="facebooklogo"></a>
-  <a href="https://www.instagram.com/f1/" target="_blank"><img src="./Assets/foto/instagram.png" alt="instagram" class="instagramlogo"></a>
-  <a href="https://twitter.com/f1" target="_blank"><img src="./Assets/foto/twitter.png" alt="twitter" class="twitterlogo"></a>
-  <a href="https://www.youtube.com/F1" target="_blank"><img src="./Assets/foto/youtube.png" alt="youtube" class="youtubelogo"></a>
-</div>
-<hr>
-<div class="tekst">
-  <h3>Address:</h3>
-  <p>UBT DUKAGJINI</p>
-  <h3>Phone Number:</h3>
-  <p>+44 20 3984 9372</p>
-</div>  
-
-<div class="navi">
-<a href="index.html" ><p>HOME</p></a>
-<a href="teams.html"><p>TEAMS</p></a>
-<a href="contact.html"><p>CONTACT</p></a>
-
-
-</div>
-<div class="owners">
-  <h4>OWNERS:</h4>
-  <p>Ensar Xhaferi</p>
-  <p>Alti Krivanjeva</p>
-</div>
-
-
-</footer>  
-  
+	
 
 
 </body>
