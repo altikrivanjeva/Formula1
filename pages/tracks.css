@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+    font-family: 'Formula1';
+    src: url('../Assets/Formula1-Regular-1.ttf') format('truetype');
+
+  }
+/* font style */
+
+body {
+    background-color: rgb(42, 41, 41);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.tracks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#italypng {
+    width: 550px;
+}
+
+.italytext {
+    flex: 1;
+    padding: 0 20px;
+    color: white;
+    padding-left: 22%;
+    
+}
+
+.italytext h1 {
+    font-family: "Formula1";
+    color: red;
+    margin: 0;
+}
+
+.italytext h2 {
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+}
+
+.spanitaly {
+    color: green;
+}
+
+.italytext h3 {
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+.tracks2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.bahrain{
+    flex-wrap: wrap;
+}
+
+#bahrainpng {
+    width: 550px;
+    padding-top: 2%;
+}
+
+.bahraintext {
+    flex: 1;
+    padding: 0 20px;
+    color: white;
+    padding-left: 22%;
+    
+}
+
+.bahraintext h1 {
+    font-family: "Formula1";
+    color: red;
+    margin: 0;
+}
+
+.bahraintext h2 {
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+}
+.bahraintext h3{
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 0;
+
+}
+.spanbahrain{
+    color: red;
+}
+
+
+
+.tracks3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.baku{
+    flex-wrap: wrap;
+}
+
+#bakunpng {
+    width: auto;
+    padding-top: 2%;
+    height: auto;
+}
+
+.bakutext {
+    flex: 1;
+    padding: 0 20px;
+    color: white;
+    padding-left: 22%;
+    font-size: 18px;
+    
+    
+}
+
+.bakutext h1 {
+    font-family: "Formula1";
+    color: red;
+    margin: 0;
+}
+
+.bakutext h2 {
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+}
+.bakutext h3 {
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+.spanbaku{
+    color: rgb(3, 142, 206);
+}
+
+img{
+    width: 550px;
+}
+
+
+
+
+.tracks4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.monaco{
+    flex-wrap: wrap;
+}
+
+#monaconpng {
+    width: auto;
+    padding-top: 2%;
+    height: auto;
+}
+
+.monacotext {
+    flex: 1;
+    padding: 0 20px;
+    color: white;
+    padding-left: 22%;
+    font-size: 18px;
+    
+    
+}
+
+.monacotext h1 {
+    font-family: "Formula1";
+    color: red;
+    margin: 0;
+}
+
+.monacotext h2 {
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+}
+.monacotext h3 {
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+.spanmonaco{
+    color: red;
+}
+
+
+.tracks5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.spain{
+    flex-wrap: wrap;
+}
+
+#spainpng {
+    width: 550px;
+    padding-top: 2%;
+    height: auto;
+}
+
+.spaintext {
+    flex: 1;
+    padding: 0 20px;
+    color: white;
+    padding-left: 22%;
+    font-size: 18px;
+    
+    
+}
+
+.spaintext h1 {
+    font-family: "Formula1";
+    color: red;
+    margin: 0;
+}
+
+.spaintext h2 {
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 10px 0;
+}
+.spaintext h3 {
+    font-family: "Formula1";
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+.spanspain{
+    color: orange;
+}
+
+img{
+    width: 550px;
+}
+
+
+
+
+
+
+
+
