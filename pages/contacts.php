@@ -6,6 +6,9 @@
   <title>Contact</title>
   <link rel="stylesheet" href="contact.css">
 
+  <link rel="icon" type="image/x-icon" href="assets/logot">
+
+
 </head>
 
 <body>

@@ -4,6 +4,5 @@ CREATE TABLE users(
     Email varchar(200),
     Age int,
     Password varchar(200),
-    FavoriteTeam VARCHAR(50) NOT NULL
 
 );

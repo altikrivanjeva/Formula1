@@ -7,7 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="style.css" />
 
+
+  <link rel="icon" type="image/x-icon" href="assets/F1.ico">
+
 </head>
+
+
+
 
 <!-- login button -->
 <div class="login-button">

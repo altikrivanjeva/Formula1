@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
+    <link rel="stylesheet" href="login.css">
+    
+    </head>
+<body>
+  
+    <menu>
+        <li>
+          <div class="topnav-right">
+             <img src="./Assets/logot/F1white.png" width="60" height="13  alt="f1 logo">
+        </div>
+          <a href="index.html">HOME</a>
+          <a href="#home">TEAMS</a>
+          <a href="#home">TRACKS</a>
+          <a href="#home">TICKETS</a>
+          <a href="contact.html">CONTACT</a>
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        </li>
+        </menu>
+
+
+        <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+               
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+
+          <script>
+           
+            var modal = document.getElementById('id01');
+                        window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<footer>    
+  <h1>F1 Partners!</h1>
+  <div class="aboutus">
+      <img src="./Assets/logot/RolexTrans.jp2" alt="rolex logo" class="rolexlogo"><br>
+      <img src="./Assets/logot/DHLLogo.jp2" alt="dhl logo" class="dhllogo"><br>
+      <img src="./Assets/logot/heineken.jp2" alt="heineken logo" class="heinekenlogo"><br>
+      <img src="./Assets/logot/pirelli.jp2" alt="pirelli logo" class="pirellilogo">
+  </div>
+  <hr>
+  <h2>Social Media</h2>
+  <div class="socialmedia">
+  <a href="https://www.facebook.com/Formula1" target="_blank"><img src="./Assets/foto/facebook.png" alt="facebook" class="facebooklogo"></a>
+  <a href="https://www.instagram.com/f1/" target="_blank"><img src="./Assets/foto/instagram.png" alt="instagram" class="instagramlogo"></a>
+  <a href="https://twitter.com/f1" target="_blank"><img src="./Assets/foto/twitter.png" alt="twitter" class="twitterlogo"></a>
+  <a href="https://www.youtube.com/F1" target="_blank"><img src="./Assets/foto/youtube.png" alt="youtube" class="youtubelogo"></a>
+</div>
+<hr>
+<div class="tekst">
+  <h3>Address:</h3>
+  <p>UBT DUKAGJINI</p>
+  <h3>Phone Number:</h3>
+  <p>+44 20 3984 9372</p>
+</div>  
+
+<div class="navi">
+<a href="index.html" ><p>HOME</p></a>
+<a href="teams.html"><p>TEAMS</p></a>
+<a href="contact.html"><p>CONTACT</p></a>
+
+
+</div>
+<div class="owners">
+  <h4>OWNERS:</h4>
+  <p>Ensar Xhaferi</p>
+  <p>Alti Krivanjeva</p>
+</div>
+
+
+</footer>  
+
+
+
+</body>
+</html>
