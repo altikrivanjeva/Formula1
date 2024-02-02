@@ -8,6 +8,12 @@
    
 </head>
 <body>
+<?php
+include ("header.html");
+?>
+
+
+
     <div class="tracks">
 
         <div class="italy">
@@ -89,7 +95,9 @@
 
 
 
-
+<?php
+include ("footer.html");
+?>
 
 
 </body>

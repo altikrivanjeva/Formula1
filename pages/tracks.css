@@ -19,6 +19,8 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    margin-top: 150px;
+    
 }
 
 #italypng {
@@ -268,8 +270,6 @@ img{
 img{
     width: 550px;
 }
-
-
 
 
 
