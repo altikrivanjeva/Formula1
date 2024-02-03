@@ -24,6 +24,8 @@
         <div class="right-links">
 
             <?php 
+
+            
             
             $id = $_SESSION['id'];
             $query = mysqli_query($con,"SELECT*FROM users WHERE Id=$id");
@@ -62,6 +64,17 @@
           </div>
        </div>
 
+
+
+
+
+
+
+       
     </main>
+
+<!-- Include footer -->
+<?php include 'footer.php'; ?>
+
 </body>
 </html>
