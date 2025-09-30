@@ -108,6 +108,14 @@ body {
   text-align: center;
 }
 
+.column img {
+  height: 40px;
+  width: auto;
+  background: transparent;
+  object-fit: contain;
+  filter: drop-shadow(0 0 0 transparent);
+}
+
 @media only screen and (max-width: 768px) {
   .footer > div {
     width: 100%;
