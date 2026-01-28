@@ -14,69 +14,38 @@
 include ("header.html");
 ?>
 
-    <div class="tracks">
-
-        <div class="italy">
-            <img src="../Assets/tracks/Italy-Emilia-Romagna.png" alt="italytrack" id="italypng">
-        </div>
-        <div class="italytext">
-            <h1>Autodromo Enzo e Dino Ferrari</h1>
-            <h2>Place : <span class="spanitaly">Italy</span></h2>
-            <h3>Circuit Length : 4.909 Km</h3>
-
-        </div>
-    </div>
-    <br>
-    <hr>
-    <div class="tracks2">
-        <div class="bahrain">
-            <img src="../Assets/tracks/bahrain.png" alt="bahraintrack" id="bahrainpng">
-        </div>
-        <div class="bahraintext">
-            <h1>Bahrain International Circuit</h1>
-            <h2>Place : <span class="spanbahrain">Bahrain</span></h2>
-            <h3>Circuit Length : 5.412 Km</h3>
-
-        </div>
-    </div>
-    <br>
-    <hr>
-    <div class="tracks3">
-        <div class="baku">
-            <img src="../Assets/tracks/baku.png" alt="bakutrack" id="bakupng">
-        </div>
-        <div class="bakutext">
-            <h1>Baku City Circuit</h1>
-            <h2>Place : <span class="spanbaku">Azerbaijan</span></h2>
-            <h3>Circuit Length : 6.003 Km</h3>
-
-        </div>
-    </div>
-    <br>
-    <hr>
-    <div class="tracks4">
-        <div class="monaco">
-            <img src="../Assets/tracks/monaco.png" alt="monacotrack" id="monacopng">
-        </div>
-        <div class="monacotext">
-            <h1>Circuit de Monaco</h1>
-            <h2>Place : <span class="spanmonaco">Monaco</span></h2>
-            <h3>Circuit Length : 3.337 Km</h3>
-
-        </div>
-    </div>
-    <br>
-    <hr>
-    <div class="tracks5">
-        <div class="spain">
-            <img src="../Assets/tracks/spain.png" alt="spaintrack" id="spainpng">
-        </div>
-        <div class="spaintext">
-            <h1>Circuit de Barcelona-Catalunya</h1>
-            <h2>Place : <span class="spanspain">Spain</span></h2>
-            <h3>Circuit Length : 4.655 Km</h3>
-
-        </div>
+    <div class="tracks-container">
+        <?php
+        $config_path = __DIR__ . "/login/php/config.php";
+        if (file_exists($config_path)) {
+            include ($config_path);
+        } else {
+            // Fallback for different directory structures if needed
+            include ("login/php/config.php");
+        }
+        
+        // Ensure we are using the formula1 database for tracks
+        mysqli_select_db($con, "formula1");
+        
+        $tracks_query = mysqli_query($con, "SELECT * FROM tracks");
+        
+        if($tracks_query && mysqli_num_rows($tracks_query) > 0) {
+            while($row = mysqli_fetch_assoc($tracks_query)) {
+                echo '<div class="track-item">
+                        <div class="track-image">
+                            <img src="'.$row['image_url'].'" alt="'.$row['name'].'">
+                        </div>
+                        <div class="track-info">
+                            <h1>'.$row['name'].'</h1>
+                            <h2>Place : <span class="place-name">'.$row['place'].'</span></h2>
+                            <h3>Circuit Length : '.$row['length'].'</h3>
+                        </div>
+                    </div>';
+            }
+        } else {
+            echo '<div class="message" style="color: white; text-align: center;"><p>No tracks found in the database.</p></div>';
+        }
+        ?>
     </div>
 
     <?php

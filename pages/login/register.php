@@ -19,8 +19,7 @@
             $email = $_POST['email'];
             $age = $_POST['age'];
             $password = $_POST['password'];
-
-         //verifying the unique email
+            $role = $_POST['role'];
 
          $verify_query = mysqli_query($con,"SELECT Email FROM users WHERE Email='$email'");
 
@@ -32,7 +31,7 @@
          }
          else{
 
-            mysqli_query($con,"INSERT INTO users(Username,Email,Age,Password) VALUES('$username','$email','$age','$password')") or die("Erroe Occured");
+            mysqli_query($con,"INSERT INTO users(Username,Email,Age,Password,Role) VALUES('$username','$email','$age','$password','$role')") or die("Erroe Occured");
 
             echo "<div class='message'>
                       <p>Registration successfully!</p>
@@ -65,6 +64,14 @@
                 <div class="field input">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" autocomplete="off" required>
+                </div>
+
+                <div class="field input">
+                    <label for="role">Role</label>
+                    <select name="role" id="role" required>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
                 </div>
 
                 <div class="field">

@@ -31,6 +31,7 @@
                     $_SESSION['username'] = $row['Username'];
                     $_SESSION['age'] = $row['Age'];
                     $_SESSION['id'] = $row['Id'];
+                    $_SESSION['role'] = $row['Role'];
                 }else{
                     echo "<div class='message'>
                       <p>Wrong Username or Password</p>

@@ -54,6 +54,29 @@ INSERT INTO `contact` (`contact-id`, `username`, `email`, `message`) VALUES
 (13, 'dsfasdf', 'dsafds@gmail.com', 'dnjsbfsdfad');
 
 --
+-- Table structure for table `tracks`
+--
+
+CREATE TABLE `tracks` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `place` varchar(100) NOT NULL,
+  `length` varchar(50) NOT NULL,
+  `image_url` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tracks`
+--
+
+INSERT INTO `tracks` (`id`, `name`, `place`, `length`, `image_url`) VALUES
+(1, 'Autodromo Enzo e Dino Ferrari', 'Italy', '4.909 Km', '../Assets/tracks/Italy-Emilia-Romagna.png'),
+(2, 'Bahrain International Circuit', 'Bahrain', '5.412 Km', '../Assets/tracks/bahrain.png'),
+(3, 'Baku City Circuit', 'Azerbaijan', '6.003 Km', '../Assets/tracks/baku.png'),
+(4, 'Circuit de Monaco', 'Monaco', '3.337 Km', '../Assets/tracks/monaco.png'),
+(5, 'Circuit de Barcelona-Catalunya', 'Spain', '4.655 Km', '../Assets/tracks/spain.png');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -64,6 +87,12 @@ ALTER TABLE `contact`
   ADD PRIMARY KEY (`contact-id`);
 
 --
+-- Indexes for table `tracks`
+--
+ALTER TABLE `tracks`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -72,6 +101,12 @@ ALTER TABLE `contact`
 --
 ALTER TABLE `contact`
   MODIFY `contact-id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `tracks`
+--
+ALTER TABLE `tracks`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

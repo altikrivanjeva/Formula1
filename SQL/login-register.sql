@@ -4,5 +4,5 @@ CREATE TABLE users(
     Email varchar(200),
     Age int,
     Password varchar(200),
-
+    Role varchar(50)
 );

@@ -15,21 +15,6 @@
 
 
 
-<!-- login button -->
-<div class="login-button">
-<button id="example-btn">Login/Register</button>
-
-</div>
-
-<script>
-  const exampleBtn = document.getElementById('example-btn');
-
-exampleBtn.addEventListener('click', () => {
-  window.open('../pages/login/index.php', '_blank');
-});
-
-</script>
-
 <body>
   <div class="middle">
     <div class="bar bar1"></div>
@@ -54,7 +39,6 @@ exampleBtn.addEventListener('click', () => {
 include ("header.html");
 ?>
 
-  <!-- Header -->
   <div id="header">
 
     <video autoplay muted loop>
@@ -62,20 +46,14 @@ include ("header.html");
       Your browser does not support the video tag.
     </video>
 
-    <!-- Inner -->
     <div class="inner">
       <header>
-
-        <h1 style="background-color: black;"><a href="" id="logo">Formula 1</a></h1>
         <hr />
-        <p style="background-color: black;">Fastest sport in the World!</p>
-        <br>
-        <br>
+        <p style="background-color: black; display: inline-block; padding: 10px 20px;">Fastest sport in the World!</p>
         <br>
         <br>
         <br>
       </header>
-
     </div>
 
   </div>
@@ -94,7 +72,6 @@ include ("header.html");
     </header>
   </section>
 
-  <!-- banneri home screen -->
   <div class="carousel-container">
     <div class="carousel" id="imageCarousel">
       <div class="carousel-item">
@@ -131,7 +108,7 @@ include ("header.html");
       </header>
 
       <footer>
-        <h1 style="color: black; font-size: 60px;">Gulf Air Bahrain GP next race in :</h1>
+        <h1 style="color: black; font-size: 60px;">AUSTRALIAN GP next race in :</h1>
         <br>
         <p id="timer" style="font-size: 50px; text-align: center; line-height: 1.8;"></p>
       </footer>
@@ -139,7 +116,6 @@ include ("header.html");
 
   </div>
 
-  <!-- tabela stading -->
 
   <h1 style="color: white; text-align: center; margin: 40px; font-size: 50px;
 ">F1 Standings 2023</h1>
