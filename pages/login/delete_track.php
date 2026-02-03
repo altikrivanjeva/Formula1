@@ -10,7 +10,7 @@ if(!isset($_SESSION['valid']) || $_SESSION['role'] != 'admin'){
 if(isset($_GET['id'])){
     $id = $_GET['id'];
 
-    mysqli_select_db($con, "formula1");
+    mysqli_select_db($con, "login-register");
     $delete_query = mysqli_query($con, "DELETE FROM tracks WHERE id=$id") or die("Error deleting track");
 
     if($delete_query){

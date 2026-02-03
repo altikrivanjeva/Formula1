@@ -36,7 +36,18 @@
                 $length = $_POST['length'];
                 $image_url = $_POST['image_url'];
 
-                mysqli_select_db($con, "formula1");
+                mysqli_select_db($con, "login-register");
+
+                // Ensure the `image_url` column exists; add it if missing to avoid SQL errors
+                $col_check = mysqli_query($con, "SHOW COLUMNS FROM tracks LIKE 'image_url'");
+                if(!$col_check) {
+                    // If the tracks table doesn't exist in this DB, surface a clear error
+                    die("Tracks table not found or database not configured correctly.");
+                }
+                if(mysqli_num_rows($col_check) == 0){
+                    mysqli_query($con, "ALTER TABLE tracks ADD COLUMN image_url VARCHAR(255) NOT NULL DEFAULT ''") or die("Failed to add image_url column");
+                }
+
                 $insert_query = mysqli_query($con,"INSERT INTO tracks(name, place, length, image_url) VALUES('$name', '$place', '$length', '$image_url')") or die("error occurred");
 
                 if($insert_query){

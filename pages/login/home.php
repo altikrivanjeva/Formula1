@@ -114,7 +114,7 @@
                             </thead>
                             <tbody>';
 
-                mysqli_select_db($con, "formula1");
+                mysqli_select_db($con, "login-register");
                 $tracks_query = mysqli_query($con, "SELECT * FROM tracks");
                 if(!$tracks_query) {
                     // Table might not exist yet, show a message
@@ -137,13 +137,46 @@
                 echo '          </tbody>
                         </table>
                       </div>';
+
+                // Contact Messages Management
+                echo '<div class="user-table-container" style="margin-top: 40px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <h2 style="margin-bottom: 0;">Contact Messages</h2>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Message</th>
+                                </tr>
+                            </thead>
+                            <tbody>';
+
+                $contact_query = mysqli_query($con, "SELECT * FROM contact");
+                if(!$contact_query || mysqli_num_rows($contact_query) == 0){
+                     echo '<tr><td colspan="3">No messages found.</td></tr>';
+                } else {
+                    while($msg_row = mysqli_fetch_assoc($contact_query)){
+                        echo '<tr>
+                                <td>'.$msg_row['username'].'</td>
+                                <td>'.$msg_row['email'].'</td>
+                                <td>'.$msg_row['message'].'</td>
+                              </tr>';
+                    }
+                }
+
+                echo '          </tbody>
+                        </table>
+                      </div>';
+
             }
           ?>
        </div>
     </main>
 
 <!-- Include footer -->
-<?php include 'footer.php'; ?>
+<?php include '../footer.html'; ?>
 
 </body>
 </html>

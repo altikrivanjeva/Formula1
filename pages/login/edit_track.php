@@ -37,7 +37,7 @@
                 $length = $_POST['length'];
                 $image_url = $_POST['image_url'];
 
-                mysqli_select_db($con, "formula1");
+                mysqli_select_db($con, "login-register");
                 $edit_query = mysqli_query($con,"UPDATE tracks SET name='$name', place='$place', length='$length', image_url='$image_url' WHERE id=$id ") or die("error occurred");
 
                 if($edit_query){
@@ -49,7 +49,7 @@
                }else{
 
                 $id = $_GET['id'];
-                mysqli_select_db($con, "formula1");
+                mysqli_select_db($con, "login-register");
                 $query = mysqli_query($con,"SELECT * FROM tracks WHERE id=$id ");
 
                 while($result = mysqli_fetch_assoc($query)){

@@ -25,7 +25,7 @@ include ("header.html");
         }
         
         // Ensure we are using the formula1 database for tracks
-        mysqli_select_db($con, "formula1");
+        mysqli_select_db($con, "login-register");
         
         $tracks_query = mysqli_query($con, "SELECT * FROM tracks");
         
